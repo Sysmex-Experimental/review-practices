@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kioh Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./main.js"></script>
+    <script src="kioh.js"></script> -->
+    <script src="./output/main.js" type="module"></script>
+    <script src="./output/kioh.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="row">
+          <div class="col" id="formulaArea">Good Luck (^^)</div>
+        </div>
+        <div class="row">
+          <div class="col" id="resultArea">0</div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-secondary" value="(">(</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-secondary" value=")">)</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-secondary" value="%">%</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-secondary" value="AC">
+              AC
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-light" value="7">7</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light" value="8">8</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light" value="9">9</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-secondary" value="/">÷</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-light" value="4">4</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light" value="5">5</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light" value="6">6</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-secondary" value="*">×</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-light" value="1">1</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light" value="2">2</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light" value="3">3</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-secondary" value="-">-</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-light" value="0">0</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light" value=".">.</button>
+          </div>
+          <div class="col">
+            <button
+              type="button"
+              class="btn btn-primary"
+              value="equals"
+              id="equalButton"
+            >
+              =
+            </button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-secondary" value="+">+</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="bottom">
+        <div class="row">
+          <div class="col-4"><button type="button" class="btn btn-success" onclick="myLot()">Today's Lot6</button></div>
+          <div class="col-8">
+            <div class="row">
+              <div class="col lotsixbox" id="lotsixbox1"></div>
+              <div class="col lotsixbox" id="lotsixbox2"></div>
+              <div class="col lotsixbox" id="lotsixbox3"></div>
+              <div class="col lotsixbox" id="lotsixbox4"></div>
+              <div class="col lotsixbox" id="lotsixbox5"></div>
+              <div class="col lotsixbox" id="lotsixbox6"></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="modal" tabindex="-1" id="errorModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">エラー情報</h5>
+          </div>
+          <div class="modal-body">
+            <p id="errorContent"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

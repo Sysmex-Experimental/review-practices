@@ -1,0 +1,10 @@
+version: '3'
+services:
+  kioh-calculator:
+    build:
+      context: ./
+    container_name: "kioh-calculator"
+    working_dir: /app/app
+    tty: true
+    ports:
+      - 4173:4173

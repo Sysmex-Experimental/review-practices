@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext", "dom"],
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./output/",
+    "sourceMap": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "./src/"
+  ]
+}
