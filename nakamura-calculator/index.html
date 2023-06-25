@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <script type="module" src="./build/index.js"></script>
+  <script type="module" src="./build/calc.js"></script>
+  <script type="module" src="./build/buttonDisabledControl.js"></script>
+  <script type="module" src="./build/utils.js"></script>
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="monitor">
+      <input type="text" class="input-box input-formula" value="">
+      <input type="text" class="input-box input-monitor" value="0">
+    </div>
+    <div class="button-layout">
+      <div class="number-keys">
+        <button class="number-buttons-group bracket-button start-bracket" value="(">(</button>
+        <button class="number-buttons-group bracket-button end-bracket" value=")">)</button>
+        <button class="number-buttons-group delete-button" value="del"></button>
+        <button class="number-buttons-group number-button" value="7">7</button>
+        <button class="number-buttons-group number-button" value="8">8</button>
+        <button class="number-buttons-group number-button" value="9">9</button>
+        <button class="number-buttons-group number-button" value="4">4</button>
+        <button class="number-buttons-group number-button" value="5">5</button>
+        <button class="number-buttons-group number-button" value="6">6</button>
+        <button class="number-buttons-group number-button" value="1">1</button>
+        <button class="number-buttons-group number-button" value="2">2</button>
+        <button class="number-buttons-group number-button" value="3">3</button>
+        <button class="number-buttons-group number-button" value="0">0</button>
+        <button class="number-buttons-group point-button" value=".">.</button>
+        <button class="function-button operator-button equal-button" value="=">=</button>
+      </div>
+
+      <div class="function-keys">
+        <button class="function-button clear-button" value="clear">C</button>
+        <button class="function-button operator-button plus-button" value="+">+</button>
+        <button class="function-button operator-button minus-button" value="-">-</button>
+        <button class="function-button operator-button multiple-button" value="*">*</button>
+        <button class="function-button operator-button divide-button" value="/">/</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

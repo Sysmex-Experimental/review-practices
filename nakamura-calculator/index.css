@@ -1,0 +1,100 @@
+.calculator {
+  background-color: red;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: solid;
+}
+
+.monitor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  height: 20%;
+}
+
+.input-box {
+  margin: 1px;
+  width: 98%;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: right;
+}
+
+.input-monitor {
+  height: 66%;
+}
+
+.input-formula {
+  height: 33%;
+}
+
+.button-layout {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  background-color: blue;
+}
+
+.function-keys {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 25%;
+  background-color: green;
+}
+
+.function-button {
+  flex: 1;
+  background-color: orange;
+  border: solid;
+  border-collapse: collapse;
+  border-width: 0.1px;
+}
+
+.function-button:active {
+  flex: 1;
+  background-color: rgb(103, 67, 0);
+}
+
+.number-keys {
+  display: flex;
+  align-content: stretch;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 75%;
+  background-color: yellow;
+}
+
+.number-buttons-group {
+  flex: 3 1 33%;
+}
+
+.operator-button {
+  background-color: orangered;
+}
+
+.operator-button:disabled {
+  background-color: gray;
+}
+
+.equal-button {
+  background-color: aqua;
+  flex: 3 1 33%;
+}
+
+.equal-button:active {
+  background-color: rgb(4, 134, 134);
+  flex: 3 1 33%;
+}
+
+.point-button:disabled {
+  background-color: gray;
+}
+
+.bracket-button:disabled {
+  background-color: gray;
+}
