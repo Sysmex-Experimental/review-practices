@@ -1,0 +1,15 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "vite": "vite",
+    "build": "npx tsc && npx vite build",
+    "build:watch": "npx tsc --watch",
+    "preview": "npx vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^4.3.9"
+  }
+}
